@@ -16,3 +16,7 @@ puts str = 'bar'
 
 
 puts 'Resultado: ',  str.bytes
+
+
+
+
