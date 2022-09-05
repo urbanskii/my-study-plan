@@ -1,0 +1,5 @@
+# Versions of www-gitlab-com dependencies managed by asdf.
+#
+# <default-version> <other-version>
+
+ruby 3.1.2
