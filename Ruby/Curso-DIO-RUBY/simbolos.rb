@@ -12,6 +12,7 @@ end
 
 $f3 = :Marcos
 
+
 p "Symbol $f1 id:  #{$f1.object_id}"
 p "Symbol $f2 id:  #{$f2.object_id}"
 p "Symbol $f3 id:  #{$f3.object_id}"
