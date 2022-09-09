@@ -8,20 +8,5 @@ puts "Hello world"
 
 puts "Hello world"
 
-puts "Hello world"
-
-
-puts "Hello world"
-
-puts "Hello world"
-
-puts "Hello world"
-v
-
-puts "Hello world"
-
-puts "Hello world"
-
-puts "Hello world"
 
 
