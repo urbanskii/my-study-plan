@@ -21,44 +21,8 @@ else
   puts "Eu sou menor que 50"
 end
 
-puts 'teste'
-p "este tete"
-
-puts 'teste'
-p "este tete"
-
-puts 'teste'
-p "este tete"
-
-
-puts 'teste'
-p "este tete"
-puts 'teste'
-p "este tete"
-
-puts 'teste'
-p "este tete"
-puts 'teste'
-
-puts 'teste'
-p "este tete"
-puts 'teste'
-
-
-puts 'teste'
-p "este tete"
-puts 'teste'
-
-puts 'teste'
-p "este tete"
-puts 'teste'
-puts 'teste'
-p "este tete"
-puts 'teste'
-
-puts 'teste'
-p "este tete"
-puts 'teste'
-puts 'teste'
-p "este tete"
-puts 'teste'
+if valor < 50
+  puts "Eu sou maior que 50"
+else
+  puts "Eu sou menor que 50"
+end
