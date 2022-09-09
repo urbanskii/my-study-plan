@@ -14,6 +14,9 @@ puts "--" * 30
 
 
 n = 42
+n = 42
+n = 42
+n = 42
 
 puts n.class 
 n= 42.42
