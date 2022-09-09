@@ -6,7 +6,7 @@ hash = {}
 hash = Hash.new
 
 =end
-0000000000
+
 
 h = {}
 p "Verificando a classe do hash com h.class: #{h.class}"
