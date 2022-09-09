@@ -27,5 +27,8 @@ p "Acessando apenas um valor do hashe h[:idade] : #{h[:idade]}"
 p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
 
 p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
-
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
 
