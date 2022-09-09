@@ -22,30 +22,43 @@ else
 end
 
 puts 'teste'
-puts 'teste'
-puts 'teste'
-puts 'teste'
-
-
-
+p "este tete"
 
 puts 'teste'
-puts 'teste'
-puts 'teste'
-puts 'teste'
+p "este tete"
 
 puts 'teste'
-puts 'teste'
-puts 'teste'
-puts 'teste'
+p "este tete"
+
 
 puts 'teste'
+p "este tete"
 puts 'teste'
+p "este tete"
+
 puts 'teste'
+p "este tete"
 puts 'teste'
 
 puts 'teste'
-puts 'teste'
-puts 'teste'
+p "este tete"
 puts 'teste'
 
+
+puts 'teste'
+p "este tete"
+puts 'teste'
+
+puts 'teste'
+p "este tete"
+puts 'teste'
+puts 'teste'
+p "este tete"
+puts 'teste'
+
+puts 'teste'
+p "este tete"
+puts 'teste'
+puts 'teste'
+p "este tete"
+puts 'teste'
