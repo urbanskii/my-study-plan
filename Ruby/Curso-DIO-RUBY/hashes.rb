@@ -32,3 +32,8 @@ p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
 p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
 p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
 
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
+p "Alterando um valor de uma chave hashe h[:idade] = value #{h}"
