@@ -50,11 +50,12 @@ puts soma_com_parametros(valor1: 10, valor2: 5) # para executar o metodo é nece
   #----------------------------------------------------------------------------------------------------
   
   
-def soma_com_parametros(valor1: 0, valor2: 0) #Definindo os parametros com argumentos com valores caso não seja passado arumentos.
-  if valor1 != 0 || valor2 != 0 
+def soma_com_parametros(valor1: 0, valor2: 0) #Definindo os parametros com argumentos com valores caso não seja passado argumentos.
+  if valor1 != 0 || valor2 != 0 #Verificando com condição se foi informado valores validos para a soma.
     soma(valor1, valor2 )    # chamando o metodo soma ja criado.
   else 
     puts "Necessario informar valores validos #{valor1}, #{valor2}"
+  end
 end
     
 puts "Vou executar a soma"
@@ -66,4 +67,51 @@ p 'Informe o segundo valor:'
 valor2 = gets.chomp.to_i
 
 
-puts soma_com_parametros(valor1:, valor2:) # para executar o metodo é necessário passar os valores pelos argumentos nomeados.
+puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metodo é necessário passar os valores pelos argumentos nomeados.
+
+  #----------------------------------------------------------------------------------------------------
+  p "--" * 45
+  p "-"
+  p "Calculadora simples fora do escopo do curso mas utilizando o conteudo apresentado."
+  #----------------------------------------------------------------------------------------------------
+
+
+  def soma(valor1: 0, valor2: 0) #Definindo o segundo parametro como opcional.
+    if valor1 != 0 || valor2 != 0 #Verificando com condição se foi informado valores validos para a soma.
+      valor1 + valor2 # em Ruby o return é opcional pois é padrão retornar a ultima linha do metodo.
+  end
+
+  def multiplicacao(valor1: 0, valor2:0 )
+    valor1 * valor2
+  end
+
+  def divisao(valor1, valor2)
+    valor1 / valor2
+  end
+
+  def subtracao(valor1, valor2)
+    valor1 - valor2
+  
+    puts "Segue as operações disponiveis para calculo"
+
+    puts "Informe o tipo de calculo"
+    puts "Para Soma digite 1"
+    puts "Para Multiplicação digite 2"
+    puts "Para Divisão digite 3"
+    puts "Para Subtração digite 4"
+
+    puts "Vou executar o comando informado"
+
+    p 'Informe o primeiro valor:'
+    valor1 = gets.chomp.to_i
+    
+    p 'Informe o segundo valor:'
+    valor2 = gets.chomp.to_i
+
+
+  def calculadora(valor1: 0, valor2: 0, tipo: '')
+    if tipo != ''
+        elsif tipo == 'soma'
+            soma(valor1: , valor2 )
+        elsif tipo == 'multiplicacao'
+            multiplicacao(valor1, valor2)
