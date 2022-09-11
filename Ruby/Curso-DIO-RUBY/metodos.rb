@@ -76,7 +76,7 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
   #----------------------------------------------------------------------------------------------------
 
 
-  def soma(valor1: 0, valor2: 0) #Definindo o segundo parametro como opcional.    
+  def soma(valor1 = 0, valor2 = 0) #Definindo o segundo parametro como opcional.    
     if valor1 != 0 || valor2 != 0 #Verificando com condição se foi informado valores validos para a soma.
        valor1 + valor2 # em Ruby o return é opcional pois é padrão retornar a ultima linha do metodo.      
     else 
@@ -84,7 +84,7 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
     end
   end
 
-  def multiplicacao(valor1: 0, valor2:0 )
+  def multiplicacao(valor1 = 0, valor2 = 0 )
     if valor1 != 0 || valor2 != 0
       valor1 * valor2
     else 
@@ -92,7 +92,7 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
     end
   end
 
-  def divisao(valor1: 0, valor2:0)
+  def divisao(valor1 = 0, valor2 = 0)
     if valor1 != 0 || valor2 != 0
       valor1 / valor2
     else 
@@ -100,7 +100,7 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
     end
   end
 
-  def subtracao(valor1: 0, valor2:0)
+  def subtracao(valor1 = 0, valor2 = 0)
     if valor1 != 0 || valor2 != 0
       valor1 - valor2
     else 
@@ -108,9 +108,7 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
     end
   end
 
-  def calculadora(valor1: 0, valor2: 0, tipo: 0)
-    p 'entrei no calc'
-    p "tipo #{tipo}"
+  def calculadora(valor1: 0, valor2: 0, tipo: 0)   
     if tipo == 1      
       soma(valor1 , valor2)    
     elsif tipo == 2
@@ -120,7 +118,7 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
     elsif tipo == 4
       subtracao(valor1, valor2)        
     else
-        puts 'Informe uma opção valida!'
+        p "opção invalida"
     end
   end
   
