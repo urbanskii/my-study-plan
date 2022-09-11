@@ -76,21 +76,53 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
   #----------------------------------------------------------------------------------------------------
 
 
-  def soma(valor1: 0, valor2: 0) #Definindo o segundo parametro como opcional.
+  def soma(valor1: 0, valor2: 0) #Definindo o segundo parametro como opcional.    
     if valor1 != 0 || valor2 != 0 #Verificando com condição se foi informado valores validos para a soma.
-      valor1 + valor2 # em Ruby o return é opcional pois é padrão retornar a ultima linha do metodo.
+       valor1 + valor2 # em Ruby o return é opcional pois é padrão retornar a ultima linha do metodo.      
+    else 
+        puts "Necessario informar valores validos #{valor1}, #{valor2}"
+    end
   end
 
   def multiplicacao(valor1: 0, valor2:0 )
-    valor1 * valor2
+    if valor1 != 0 || valor2 != 0
+      valor1 * valor2
+    else 
+        puts "Necessario informar valores validos #{valor1}, #{valor2}"
+    end
   end
 
-  def divisao(valor1, valor2)
-    valor1 / valor2
+  def divisao(valor1: 0, valor2:0)
+    if valor1 != 0 || valor2 != 0
+      valor1 / valor2
+    else 
+        puts "Necessario informar valores validos #{valor1}, #{valor2}"
+    end
   end
 
-  def subtracao(valor1, valor2)
-    valor1 - valor2
+  def subtracao(valor1: 0, valor2:0)
+    if valor1 != 0 || valor2 != 0
+      valor1 - valor2
+    else 
+        puts "Necessario informar valores validos #{valor1}, #{valor2}"
+    end
+  end
+
+  def calculadora(valor1: 0, valor2: 0, tipo: 0)
+    p 'entrei no calc'
+    p "tipo #{tipo}"
+    if tipo == 1      
+      soma(valor1 , valor2)    
+    elsif tipo == 2
+      multiplicacao(valor1, valor2)                   
+    elsif tipo == 3
+      divisao(valor1, valor2)        
+    elsif tipo == 4
+      subtracao(valor1, valor2)        
+    else
+        puts 'Informe uma opção valida!'
+    end
+  end
   
     puts "Segue as operações disponiveis para calculo"
 
@@ -100,7 +132,8 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
     puts "Para Divisão digite 3"
     puts "Para Subtração digite 4"
 
-    puts "Vou executar o comando informado"
+    puts "Informe a opção:"
+    tipo = gets.chomp.to_i
 
     p 'Informe o primeiro valor:'
     valor1 = gets.chomp.to_i
@@ -108,10 +141,6 @@ puts soma_com_parametros(valor1: valor1, valor2: valor2) # para executar o metod
     p 'Informe o segundo valor:'
     valor2 = gets.chomp.to_i
 
+    puts "Vou executar o comando informado"
 
-  def calculadora(valor1: 0, valor2: 0, tipo: '')
-    if tipo != ''
-        elsif tipo == 'soma'
-            soma(valor1: , valor2 )
-        elsif tipo == 'multiplicacao'
-            multiplicacao(valor1, valor2)
+  p "Resultado: #{calculadora(valor1: valor1, valor2: valor2, tipo: tipo)}"
