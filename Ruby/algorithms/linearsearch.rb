@@ -6,30 +6,30 @@ Algoritmo para busca linear em um array.
 
 =end
 
-
-
-def search(arr, x)
-  n = arr.length 
+def search_1(arr, x)
   i = 0
-  a = -1
-  
-  arr.each do i      
-    if arr[i] == x        
-      a= 1        
-      break
-    end    
-    i += 1   
+  arr.each do i    
+    if arr[i] == x
+      return i
+      break       
+    end
+    i += 1
   end
-  a 
+  -1
 end
 
+arr = [2,400,3,485,4,10,1000,40]
+x = [0,1,2,4,5,50,10,100,40]
 
-arr = [2,3,4,10,40]
-x = 40
-retorno = [search(arr, x)]
+i = 0
 
-if retorno[0] == 1
-  p "Valor: #{x} foi encontrado."
-else 
-  p "Valor não foi encontrado na pesquisa!"
+x.each do i
+  if search_1(arr, x[i]) > 1
+    p "*****"*15
+    p "Valor: #{x[i]} foi encontrado no indice #{search_1(arr, x[i])}."   
+  else 
+    p "*****"*15
+    p "Valor #{x[i]} não foi encontrado na pesquisa!"
+ end
+ i += 1
 end
