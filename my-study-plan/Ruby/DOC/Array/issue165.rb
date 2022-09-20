@@ -13,4 +13,6 @@ Raises an exception unless object.to_ary returns an Array object
     
 =end
 
+s = "marcos"
 
+s = 
