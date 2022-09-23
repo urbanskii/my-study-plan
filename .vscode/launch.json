@@ -22,7 +22,7 @@
         "request": "launch",
         "cwd": "${workspaceRoot}",
         "useBundler": true,
-        "pathToBundler": "${env:rvm_path}/gems/ruby-3.0.2/bin/bundle",
+        "pathToBundler": "${env:rvm_path}/gems/ruby-3.1.2/bin/bundle",
         "program": "${workspaceRoot}/bin/rails",
         "args": [
           "server",
@@ -35,7 +35,7 @@
         "type": "Ruby",
         "request": "launch",
         "cwd": "${workspaceRoot}",
-        "program": "${env:rvm_path}/gems/ruby-3.0.2/bin/rspec",
+        "program": "${env:rvm_path}/gems/ruby-3.1.2/bin/rspec",
         "args": [
           "--pattern",
           "${workspaceRoot}/spec/**/*_spec.rb"
@@ -47,9 +47,9 @@
         "request": "launch",
         "cwd": "${workspaceRoot}",
         "useBundler": true,
-        "pathToBundler": "${env:rvm_path}/gems/ruby-3.0.2/bin/bundle",
+        "pathToBundler": "${env:rvm_path}/gems/ruby-3.1.2/bin/bundle",
         "debuggerPort": "1235",
-        "program": "${env:rvm_path}/gems/ruby-3.0.2/bin/rspec",
+        "program": "${env:rvm_path}/gems/ruby-3.1.2/bin/rspec",
         "args": [
           "${file}"
         ]
@@ -60,9 +60,9 @@
         "request": "launch",
         "cwd": "${workspaceRoot}",
         "useBundler": true,
-        "pathToBundler": "${env:rvm_path}/gems/ruby-3.0.2/bin/bundle",
+        "pathToBundler": "${env:rvm_path}/gems/ruby-3.1.2/bin/bundle",
         "debuggerPort": "1235",
-        "program": "${env:rvm_path}/gems/ruby-3.0.2/bin/rspec",
+        "program": "${env:rvm_path}/gems/ruby-3.1.2/bin/rspec",
         "args": [
           "${file}:${lineNumber}"
         ]
