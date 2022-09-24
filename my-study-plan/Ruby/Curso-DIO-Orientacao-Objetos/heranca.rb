@@ -17,6 +17,7 @@ Herança é para reuso de funcionalidades, não é para definir metodos que uma 
 
 
 
+
 =end
 
 class Sensor
