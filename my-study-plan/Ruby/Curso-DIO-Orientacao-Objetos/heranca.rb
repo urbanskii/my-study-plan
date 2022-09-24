@@ -15,6 +15,7 @@ super # executa o método sobrescrito da super classe
 Herança é para reuso de funcionalidades, não é para definir metodos que uma classe deve responder.
 
 
+
 =end
 
 class Sensor
