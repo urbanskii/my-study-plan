@@ -12,10 +12,13 @@ variavel de classe é chamado por @@variavel
 =end
 
 class Pessoa
-    @@variavel_da_classe_pessoa = 100
+    @@variavel_da_classe_pessoa = 0
 
     def self.gerar
-        puts "vou fazer antes"
+        puts "Estou gerando uma nova pessoa"
+        Pessoa.new
+        incrementar_valor_variavel
+    end
 
     def self.valor_variavel
         @@variavel_da_classe_pessoa
@@ -26,4 +29,9 @@ class Pessoa
     end
 end
 
+pessoa = Pessoa.gerar
+pessoa = Pessoa.gerar
+pessoa = Pessoa.gerar
+pessoa = Pessoa.gerar
 
+p pessoa
