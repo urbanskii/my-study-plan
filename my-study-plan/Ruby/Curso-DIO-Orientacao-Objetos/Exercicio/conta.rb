@@ -11,9 +11,17 @@ require_relative "./pessoa"
         
     end
 
-    def consulta
-        cliente
+    def executa_transfere(valor, conta)
+        transfere(valor)
 
+    end
+
+    def executa_deposita(valor)
+        deposita(valor)
+    end
+
+    def consulta_saldo
+       p @@saldo
     end
 
     private
@@ -32,9 +40,13 @@ require_relative "./pessoa"
         
     end
 
-    def transfere(id, valor)
+    def transfere(valor)
         puts "transfere"
-        @@saldo
+        @@saldo -= valor
+    end
+
+    def deposita(valor)
+        @@saldo += valor
     end
 
     def saca(valor)
@@ -43,11 +55,11 @@ require_relative "./pessoa"
 
     def deposita(valor)
         puts "deposita"
-        @@saldo = valor
+        @@saldo += valor
     end
 
     protected # tudo que é criado abaixo é protected
-    def consulta_saldo(valor)
+    def consulta(valor)
         puts "Saldo"
         @@saldo = valor
     end
