@@ -9,6 +9,8 @@ para definir um metodo de classe usa-se o prefixo def self.gerar
 
 variavel de classe é chamado por @@variavel
 
+
+
 =end
 
 class Pessoa
