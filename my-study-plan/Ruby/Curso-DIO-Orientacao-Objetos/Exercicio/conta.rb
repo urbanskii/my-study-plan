@@ -3,6 +3,7 @@ require_relative "./pessoa"
  class Conta
     @@id = 0
     @@saldo = 0
+    @@nome = nil
 
     def conta(nome, valor) #metodo publico
         puts "Método principal"
@@ -21,24 +22,27 @@ require_relative "./pessoa"
     end
 
     def consulta_saldo
-       p @@saldo
+       @@saldo
     end
+    def cliente
+        p @@id
+        p @@saldo
+        p @@nome
+        
+    end
+
 
     private
     def id(nome, valor)
         puts "cria nova conta"
         @@id += 1
         pessoa = Pessoa.new(nome)
-        pessoa.nome
+        @@nome = pessoa.nome
         deposita(valor)
         
     end
 
-    def cliente
-        p @@id
-        p @@saldo
-        
-    end
+ 
 
     def transfere(valor)
         puts "transfere"

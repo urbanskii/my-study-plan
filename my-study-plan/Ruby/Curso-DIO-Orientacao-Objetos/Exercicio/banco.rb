@@ -13,6 +13,11 @@ conta1.conta("marcos", 100)
 conta2.conta("joao", 200)
 #conta2.consulta
 
+p conta1.cliente
+p conta2.cliente
+
+
+
 #conta2.executa_transfere(50, conta1.executa_deposita(50))
 
 p "Conta 1 saldo: #{conta1.consulta_saldo}"
