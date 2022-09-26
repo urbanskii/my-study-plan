@@ -1,9 +1,9 @@
 require_relative "./pessoa"
 
  class Conta
-    @@id = 0
-    @@saldo = 0
-    @@nome = nil
+    @id = 0
+    @saldo = 0
+    @nome = nil
 
     def conta(nome, valor) #metodo publico
         puts "Método principal"
@@ -22,22 +22,20 @@ require_relative "./pessoa"
     end
 
     def consulta_saldo
-       @@saldo
+       @saldo
     end
     def cliente
-        p @@id
-        p @@saldo
-        p @@nome
+        p @id
+        p @saldo
+        p @nome
         
     end
 
-
-    private
     def id(nome, valor)
         puts "cria nova conta"
-        @@id += 1
+        @id += 1
         pessoa = Pessoa.new(nome)
-        @@nome = pessoa.nome
+        @nome = pessoa.nome
         deposita(valor)
         
     end
@@ -46,11 +44,11 @@ require_relative "./pessoa"
 
     def transfere(valor)
         puts "transfere"
-        @@saldo -= valor
+        @saldo -= valor
     end
 
     def deposita(valor)
-        @@saldo += valor
+        @saldo += valor
     end
 
     def saca(valor)
@@ -59,13 +57,13 @@ require_relative "./pessoa"
 
     def deposita(valor)
         puts "deposita"
-        @@saldo += valor
+        @saldo += valor
     end
 
     protected # tudo que é criado abaixo é protected
     def consulta(valor)
         puts "Saldo"
-        @@saldo = valor
+        @saldo = valor
     end
 end
 
