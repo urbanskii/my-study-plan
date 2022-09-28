@@ -2,7 +2,7 @@
 arr = [5,4,2,8]
 arr1 = [5,4,2,8]
 valor = 0 
-condition = false
+
 j = 0
 i = 0
 
