@@ -1,7 +1,7 @@
 # implementation from https://www.honeybadger.io/blog/ruby-bubble-sort/
 
 
-arr = [5,4,2,8]
+arr = [5,4,2,8,25,2,35,1,99,34,22]
 
 n = arr.size
 
