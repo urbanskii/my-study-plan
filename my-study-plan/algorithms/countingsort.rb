@@ -32,9 +32,9 @@ def counting_sort(arr)
     end
 
     i =0
-    arr_counting_size.each do |chave|
-        arr_counting_size[i] += arr_counting_size[chave]
-        i += 1
+    p arr_counting_size
+    for i in arr_counting_size
+        arr_counting_size[i] += arr_counting_size[i-1]
         p i
     end
 
