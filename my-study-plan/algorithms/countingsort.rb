@@ -11,9 +11,7 @@ def counting_sort(arr)
 
     while counting == false          
         if arr[i] < arr[i+1]
-            arr_counting = arr[i+1]
-        else
-            arr_counting += 1
+            arr_counting = arr[i+1]        
         end
         
         i += 1
@@ -30,6 +28,9 @@ def counting_sort(arr)
        for x in arr
             if arr_counting_size[i] == arr[x]
                 arr_counting_size[i] = 1
+            else
+                i += 1
+            
             end
         end
     end
