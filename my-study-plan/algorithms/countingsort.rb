@@ -31,13 +31,21 @@ def counting_sort(arr)
         i += 1        
     end
 
+    i =0
+    arr_counting_size.each do |chave|
+        arr_counting_size[i] += arr_counting_size[chave]
+        i += 1
+        p i
+    end
 
     
+
+
 
 end
 
 
-arr= [1,5,8,1,2,8,5,12,1]
+arr= [1,3]
 
 
 p counting_sort(arr)
