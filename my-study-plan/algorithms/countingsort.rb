@@ -22,17 +22,14 @@ def counting_sort(arr)
     end  
  
     arr_counting
-    arr_counting_size = Array.new(arr_counting)
+    arr_counting_size = Array.new(arr_counting, 0)    
     i =0
-    arr_counting_size.each do i
-       for x in arr
-            if arr_counting_size[i] == arr[x]
-                arr_counting_size[i] = 1
-            else
-                i += 1
+    arr_counting_size.each do i             
+        if arr_counting_size[i] == arr[i]
+            arr_counting_size[i] = 1     
             
-            end
         end
+        
     end
 
 end
