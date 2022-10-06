@@ -22,13 +22,20 @@ def counting_sort(arr)
     end  
  
     arr_counting
-    arr_counting_size = Array.new(arr_counting, 0)    
+    arr_counting_size = Array.new(arr_counting, 0)
     i =0
-    arr_counting_size.each do i             
-        if arr_counting_size[i] == arr[i]
-            arr_counting_size[i] = 1     
-            
+
+    arr_counting_size.each do |chave|
+        p i
+     
+
+        arr.each do |chave1, valor|
+            if chave1 == i
+                arr_counting_size[i] += 1
+            end
         end
+        i += 1
+        
         
     end
 
