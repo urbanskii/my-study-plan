@@ -1,51 +1,18 @@
-
-
-
-
-def counting_sort(arr)
+def classic(array)
+    counters = Array.new(array.max + 1, 0)
+    array.each { |e| counters[e] += 1 }
+  
+    result = Array.new(array.size)
     i = 0
-    arr_counting = 0
-    counting = false
-
-
-    while counting == false          
-        if arr[i] < arr[i+1]
-            arr_counting = arr[i+1]        
-        end        
+    counters.size.times do |number|
+      counters[number].times do
+        result[i] = number
         i += 1
-        if arr[i+1] == nil
-            counting = true
-        end        
-    end  
- 
-
-    arr_counting_size = Array.new(arr_counting+1, 0)
-    i =0
-
-    arr_counting_size.each do |chave|  
-        arr.each do |chave1, valor|
-            if chave1 == i
-                arr_counting_size[i] += 1
-            end
-        end
-        i += 1        
+      end
     end
-
-    i =0
-    p arr_counting_size
-    for i in arr_counting_size
-        arr_counting_size[i] += arr_counting_size[i-1]
-        p i
-    end
-
-    
-
-
-
+  
+    result
 end
 
-
-arr= [1,3]
-
-
-p counting_sort(arr)
+arr = [1,3,1,4,1,9,10,1]
+p classic(arr)
