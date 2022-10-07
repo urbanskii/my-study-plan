@@ -33,13 +33,15 @@ def counting_sort(arr)
 
     i=0
     p arr_counting_size
-   
+    
+    result = Array.new(arr_counting_size)
     arr_counting_size.size.times do |number|
         arr_counting_size[number].times do
-            p i
+            result[i] = number
             i =+ 1
+        end
     end
-    p arr_counting_size
+    result
 
     
 
@@ -48,7 +50,7 @@ def counting_sort(arr)
 end
 
 
-arr= [1,3]
+arr= [1,3,1,6,10,1]
 
 
 p counting_sort(arr)
