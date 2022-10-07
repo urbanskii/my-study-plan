@@ -8,6 +8,7 @@ def classic(array)
       counters[number].times do
         result[i] = number
         i += 1
+        
       end
     end
   
