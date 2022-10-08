@@ -1,20 +1,21 @@
 require 'rails_helper' 
 
+
 describe User do 
  it "It's valid when contains the first name, last name and e-mail" do
-  user = User.new(firstname: 'Bruce',
+  user = User.new( firstname: 'Bruce',
    lastname: 'Dickinson', 
-   email:'bruce@ironmaiden.com')
+   email: 'bruce@ironmaiden.com' )
    
    expect(user).to be_valid
   end
 end
 
 describe User do
- it "It's not valid when the first name is nil " do
+ it "It's not valid when the first name is null " do
   user = User.new(firstname: nil)
   user.valid?
-  expect(user.errors[:firstname].to include("can't be blank"))
+  expect(user.errors[:firstname]).to include("can't be blank")
  end
 end
 
