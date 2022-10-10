@@ -1,26 +1,8 @@
-
-
-
-
 def counting_sort(arr)
-    i = 0
-    arr_counting = 0
-    counting = false
+    i = 0   
 
-
-    while counting == false          
-        if arr[i] < arr[i+1]
-            arr_counting = arr[i+1]        
-        end        
-        i += 1
-        if arr[i+1] == nil
-            counting = true
-        end        
-    end  
- 
-
-    arr_counting_size = Array.new(arr_counting+1, 0)
-    i =0
+    arr_counting_size = Array.new(arr.max+1, 0)
+    
 
     arr_counting_size.each do |chave|  
         arr.each do |chave1, valor|
@@ -32,25 +14,20 @@ def counting_sort(arr)
     end
 
     i=0
-    p arr_counting_size
-    
-    result = Array.new(arr_counting_size)
+  
+    result = Array.new(arr.size)
     arr_counting_size.size.times do |number|
         arr_counting_size[number].times do
             result[i] = number
-            i =+ 1
+            i += 1
         end
     end
+
     result
-
-    
-
-
-
 end
 
 
-arr= [1,3,1,6,10,1]
+arr= [1,3,1,1,10,15,1,2,25,4,150,1000,5,1,154789,1,2]
 
 
 p counting_sort(arr)
