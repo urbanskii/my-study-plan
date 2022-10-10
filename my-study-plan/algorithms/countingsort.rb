@@ -1,5 +1,5 @@
 def classic(array)
-    counters = Array.new(array.max + 1, 0)
+    counters = Array.new(array.max+1, 0)
     array.each { |e| counters[e] += 1 }
   
     result = Array.new(array.size)
