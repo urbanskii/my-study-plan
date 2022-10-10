@@ -15,5 +15,5 @@ def classic(array)
     result
 end
 
-arr = [1,3,1,4,1,9,10,1]
+arr = [1,3,1,1,10,15,1,2,25,4,150,1000,5,1,154789,1,2]
 p classic(arr)
