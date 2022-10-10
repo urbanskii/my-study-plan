@@ -1,9 +1,18 @@
 
+fundamentos,
 
 conceito base: entidade X relacionamento
     * Atributos: campo, coluna, tipo
     * Cliente <- <comprou> -> Produto
 
 ACID - Atomicidade, consistência, isolamento e durabilidade - Garante integridade
+
+get started postgreSQL
+
+* Single instance, replication (primary-standby)
+
+
+
+
 
 
