@@ -39,6 +39,10 @@ exec "$SHELL"
 
 https://zexergy.com/blog/Install-Postgresql/
 
+----------------------------------------------------------------------------------------------------
+
+Criando database e iniciando o pgAdmin #208
+
 
 
 
