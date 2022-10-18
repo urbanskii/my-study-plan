@@ -12,6 +12,32 @@ get started postgreSQL
 * Single instance, replication (primary-standby)
 
 
+para instalar postgreSQL
+
+https://www.postgresql.org/download/linux/ubuntu/
+
+para instalar o pgadmin4
+
+necessario instalar o pyenv e virtual com o python,
+
+https://github.com/pyenv/pyenv
+
+mudar para o diretorio onde esta instalando o python na virtualenv
+virtualenv --python=/usr/local/bin/python3.8 pgadmin_env
+comando para verificar which python
+
+
+par funcionar o virtualenv no zsh,
+
+For Zsh:
+
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+
+exec "$SHELL"
+
+https://zexergy.com/blog/Install-Postgresql/
 
 
 
