@@ -7,19 +7,31 @@ Minimum sum by choosing minimum of pairs from array
     
 =end
 
-A = [2,4,1,3,6,8,1]
+A = [7,2,3,4,5,6]
 B = []
 i = 0
 
-array_size = A.size
+minimum_value = A.min
 
-p array_size
-p A.each
+minimum_sum = minimum_value * (A.count - 1)
 
-A.each do i
-    min_value = A.min
-    A.pop(min_value)
-    p A  
-   
+p minimum_sum
+
+#B[0] = minimum_value
+#A.delete(minimum_value)
+#minimum_value = A.min
+#B[1] = minimum_value
+
+#p B
+#p A
+arr_size = A.size
+
+for i in arr_size
+    B[i] = A.min
+    A.delete(i)  
+    i += 1  
 end
+
+p A
+p B
 
