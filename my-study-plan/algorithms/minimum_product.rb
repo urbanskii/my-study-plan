@@ -37,7 +37,23 @@ def minProductSubset(a, n)
 
         product = product * a[i]
     end   
+   
+    if count_zero == n or (count_neg == 0 and count_zero > 0)
+        return 0
+    end
+
+    if (count_neg == 0)
+        return min_pos
+    end
+
+    if ((count_neg & 1) == 0 and count_neg != 0)
+ 
+        # Otherwise result is product of
+        # all non-zeros divided by
+        # maximum valued negative.
+        product = int(prod / max_neg)
     product
+
 end
 
 
