@@ -7,7 +7,7 @@ Minimum sum by choosing minimum of pairs from array
     
 =end
 
-hhA = [7,2,3,4,5,6]
+
 B = []
 i = 0
 
@@ -28,7 +28,6 @@ arr_size = A.size
 
 for i in arr_size
     B[i] = A.min
-    A.delete(i)  th
     i += 1  
 end
 
