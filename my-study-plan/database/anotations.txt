@@ -39,9 +39,33 @@ exec "$SHELL"
 
 https://zexergy.com/blog/Install-Postgresql/
 
+caso esqueça senha do usuario do pgadmin
+
+ sqlite3 pgadmin4.db "UPDATE USER SET LOCKED = false, LOGIN_ATTEMPTS = 0 WHERE USERNAME = 'marcos.urbanski@gmail.com';" ".exit"
+
 ----------------------------------------------------------------------------------------------------
 
 Criando database e iniciando o pgAdmin #208
+
+para acessar o banco,
+
+    sudo -u postgres psql
+
+para listar todos os databases criados,
+
+    postgres=# \l
+
+para listar os usuarios
+    
+    \du
+
+para criar banco
+
+    CREATE DATABASE catalogo;
+
+
+
+
 
 
 
