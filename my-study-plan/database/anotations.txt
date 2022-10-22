@@ -95,3 +95,5 @@ ADD CONSTRAINT fk_id_produtora FOREIGN KEY (id_produtora) REFERENCES tb_produtor
 
 
 
+
+
