@@ -63,9 +63,6 @@ para criar banco
 
     CREATE DATABASE catalogo;
 
-----------------------------------------------------------------------------------------------------
-
-
 CREATE TABLE tb_diretor(
 id_diretor int NOT NULL,
 nome_diretor varchar(50),
@@ -82,7 +79,6 @@ genero varchar(25),
 PRIMARY KEY (id_filme),
 FOREIGN KEY (id_diretor) REFERENCES tb_diretor(id_diretor)
 );
-
 
 
 
