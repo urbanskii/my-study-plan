@@ -134,5 +134,33 @@ desenvolvido em C
 trabalha com pool de conexão, controla e balanceia conexões de entrada para evitar problema de performance
 
 
+----------------------------------------------------------------------------------------------------
+
+boas praticas,
+
+analise de toda estrututa, infra, aplicação,
+
+para manutenção, sempre com janela de manutenção com incidente.
+
+comunicação entre as areas relacionadas,
+
+INNER JOIN = vinculo entre tabelas relacionadas
+
+explain SELECT * FROM public.tb_diretor INNER JOIN tb_filme ON tb_filme.id_diretor = tb_diretor.id_diretor;
+
+"Hash Join  (cost=22.15..36.71 rows=360 width=320)"
+"  Hash Cond: (tb_filme.id_diretor = tb_diretor.id_diretor)"
+"  ->  Seq Scan on tb_filme  (cost=0.00..13.60 rows=360 width=198)"
+"  ->  Hash  (cost=15.40..15.40 rows=540 width=122)"
+"        ->  Seq Scan on tb_diretor  (cost=0.00..15.40 rows=540 width=122)"
+
+
+
+
+
+
+
+
+
 
 
