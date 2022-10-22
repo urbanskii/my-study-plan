@@ -81,5 +81,17 @@ FOREIGN KEY (id_diretor) REFERENCES tb_diretor(id_diretor)
 );
 
 
+CREATE TABLE tb_produtora(
+id_produtora int NOT NULL,
+nome_produtora varchar(25),
+PRIMARY KEY (id_produtora)
+);
+
+foi alterado a tabela filme pois não estava inserido o campo de referencia para a tabela tb_produtora
+
+
+ALTER TABLE tb_filme
+ADD CONSTRAINT fk_id_produtora FOREIGN KEY (id_produtora) REFERENCES tb_produtora(id_produtora);
+
 
 
