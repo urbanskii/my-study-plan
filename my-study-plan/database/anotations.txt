@@ -94,6 +94,10 @@ ALTER TABLE tb_filme
 ADD CONSTRAINT fk_id_produtora FOREIGN KEY (id_produtora) REFERENCES tb_produtora(id_produtora);
 
 
+----------------------------------------------------------------------------------------------------
+
+inserindo valores nas tabelas,
+
 
 
 
