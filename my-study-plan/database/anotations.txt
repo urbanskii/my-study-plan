@@ -121,5 +121,18 @@ VALUES
 SELECT * FROM public.tb_diretor INNER JOIN tb_filme ON tb_filme.id_diretor = tb_diretor.id_diretor;
 
 
+----------------------------------------------------------------------------------------------------
+
+\c catalago para conectar no database
+
+\dt para mostrar relacionamento
+
+tuples no dashboard são as linhas
+
+desenvolvido em C
+
+trabalha com pool de conexão, controla e balanceia conexões de entrada para evitar problema de performance
+
+
 
 
