@@ -42,12 +42,12 @@ i = 0
         end
         i += 1
     end
+    return "Upper case letters : #{upperLetter}", "Lower case letters : #{lowerLetter}", "Numbers : #{number}", "Special Characters : #{specialCharac}"
 end
 
 
 string = "#GeeKs01fOr@gEEks07"
 
-p upperLetter
-p lowerLetter
-p number
-p specialCharac
+p "String: #{string}"
+p string_count(string)
+
