@@ -22,25 +22,30 @@ Special Characters : 2
     
 =end
 
-string = "#GeeKs01fOr@gEEks07".split(//)
+def string_count(string)
+string = string.split(//)
 upperLetter = 0
 lowerLetter = 0
 number = 0
 specialCharac = 0
 i = 0
 
-string.each do i
-    if string[i].ord >= 65 and string[i].ord <= 90
-        upperLetter += 1
-    elsif string[i].ord >= 97 and string[i].ord <= 122 
-        lowerLetter += 1
-    elsif string[i].ord >= 48 and string[i].ord <= 57
-        number += 1
-    else
-        specialCharac += 1
+    string.each do i
+        if string[i].ord >= 65 and string[i].ord <= 90
+            upperLetter += 1
+        elsif string[i].ord >= 97 and string[i].ord <= 122 
+            lowerLetter += 1
+        elsif string[i].ord >= 48 and string[i].ord <= 57
+            number += 1
+        else
+            specialCharac += 1
+        end
+        i += 1
     end
-    i += 1
 end
+
+
+string = "#GeeKs01fOr@gEEks07"
 
 p upperLetter
 p lowerLetter
