@@ -24,13 +24,25 @@ Special Characters : 2
 
 string = "#GeeKs01fOr@gEEks07".split(//)
 upperLetter = 0
+lowerLetter = 0
+number = 0
+specialCharac = 0
 i = 0
 
 string.each do i
     if string[i].ord >= 65 and string[i].ord <= 90
         upperLetter += 1
+    elsif string[i].ord >= 97 and string[i].ord <= 122 
+        lowerLetter += 1
+    elsif string[i].ord >= 48 and string[i].ord <= 57
+        number += 1
+    else
+        specialCharac += 1
     end
     i += 1
 end
 
 p upperLetter
+p lowerLetter
+p number
+p specialCharac
