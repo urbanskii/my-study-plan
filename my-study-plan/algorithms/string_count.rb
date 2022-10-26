@@ -47,7 +47,13 @@ end
 
 
 string = "#GeeKs01fOr@gEEks07"
+string2 = "*GeEkS4GeEkS*"
 
 p "String: #{string}"
 p string_count(string)
+
+p "String: #{string2}"
+p string_count(string2)
+
+
 
