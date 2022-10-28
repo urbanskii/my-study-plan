@@ -1,5 +1,7 @@
 class Lasagna
+  EXPECTED_MINUTES_IN_OVEN = 40
   def remaining_minutes_in_oven(actual_minutes_in_oven)
+    EXPECTED_MINUTES_IN_OVEN
     raise 'Please implement the Lasagna#remaining_minutes_in_oven method'
   end
 
