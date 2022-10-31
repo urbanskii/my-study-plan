@@ -6,6 +6,8 @@ class Lasagna
   end
 
   def preparation_time_in_minutes(layers)
+    layers = layers*layers
+    return layers
     raise 'Please implement the Lasagna#preparation_time_in_minutes method'
   end
 
