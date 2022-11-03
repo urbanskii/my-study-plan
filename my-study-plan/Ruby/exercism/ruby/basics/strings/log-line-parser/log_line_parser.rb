@@ -1,10 +1,10 @@
 class LogLineParser
   def initialize(line)
-    @line = line
+    @line = line.slice(10, 23)
   end
 
   def message
-    raise 'Please implement the LogLineParser#message method'
+    @line
   end
 
   def log_level
