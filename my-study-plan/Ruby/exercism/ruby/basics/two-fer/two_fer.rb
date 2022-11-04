@@ -7,9 +7,13 @@ To get started with TDD, see the `README.md` file in your
 =end
 
 class TwoFer
-  def two_fer(person)
-    return person
+
+  def initialize(person)
+    @person = person
+  end
+  def two_fer
+    @person
   end
 end
 
-p TwoFer.new().two_fer("nome")
+p TwoFer.new("joao").two_fer
