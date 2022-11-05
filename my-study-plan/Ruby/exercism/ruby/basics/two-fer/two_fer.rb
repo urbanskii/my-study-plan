@@ -8,12 +8,8 @@ To get started with TDD, see the `README.md` file in your
 
 class TwoFer
 
-  def initialize(person)
-    @person = person
-  end
-  def two_fer
-    @person
+  def self.two_fer(person = 'you')
+    "One for #{person}, one for me."
   end
 end
 
-p TwoFer.new("joao").two_fer
