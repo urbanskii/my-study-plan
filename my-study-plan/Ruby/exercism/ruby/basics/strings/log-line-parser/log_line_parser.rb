@@ -27,3 +27,4 @@ class LogLineParser
     @line = "#{message} (#{log})"
   end
 end
+LogLineParser.new('[ERROR]: Stack overflow').message
