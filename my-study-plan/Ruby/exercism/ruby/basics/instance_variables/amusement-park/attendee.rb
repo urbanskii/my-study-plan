@@ -20,5 +20,5 @@ class Attendee
   end
 end
 
-a = Attendee.new(height)
-puts "#{Attendee.new(height)}"
+height = 100
+p Attendee.new(height).class
