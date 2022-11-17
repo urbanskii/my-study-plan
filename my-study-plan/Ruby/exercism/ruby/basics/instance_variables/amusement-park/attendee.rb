@@ -1,6 +1,6 @@
 class Attendee
   def initialize(height)
-    raise 'Implement the Attendee#initialize method'
+    @height = height
   end
 
   def height
@@ -19,3 +19,6 @@ class Attendee
     raise 'Implement the Attendee#revoke_pass! method'
   end
 end
+
+a = Attendee.new(height)
+puts "#{Attendee.new(height)}"
