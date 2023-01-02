@@ -1,4 +1,8 @@
+=begin
+Create this for the branch #294
+=end
 class Attendee
+
   def initialize(height, pass_id = nil)
     @height = height
     @pass_id = pass_id
