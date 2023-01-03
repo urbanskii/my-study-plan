@@ -5,3 +5,19 @@ Write your code for the 'Acronym' exercise in this file. Make the tests in
 To get started with TDD, see the `README.md` file in your
 `ruby/acronym` directory.
 =end
+class Acronym
+  def self.abbreviate(phrase)
+    acronym = ""
+    words = phrase.split(/[^\p{Alnum}]-|-[^\p{Alnum}]/)
+    words.each do |word|
+      next if word.empty? || word.length == 1
+      if word == word.upcase
+        acronym += word
+      else
+        acronym += word[0].upcase
+      end
+    end
+    acronym
+  end
+end
+
