@@ -8,10 +8,10 @@ To get started with TDD, see the `README.md` file in your
 class Acronym
   def self.abbreviate(phrase)
     acronym = ""
-    words = phrase.split(/[^\p{Alnum}]-|-[^\p{Alnum}]/)
+    words = phrase.split(/[^\p{Alnum}]+/)
     words.each do |word|
-      next if word.empty? || word.length == 1
-      if word == word.upcase
+      next if word.empty?
+      if word.length == 1 || word == word.upcase
         acronym += word
       else
         acronym += word[0].upcase
@@ -20,4 +20,3 @@ class Acronym
     acronym
   end
 end
-
